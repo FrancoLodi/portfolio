@@ -1,0 +1,49 @@
+/*RESET*/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+button {
+  cursor: pointer;
+}
+
+header .navbar div div ul li a {
+  color: tomato;
+}
+
+main div h1 {
+  font-size: 70px;
+  text-align: right;
+  font-weight: 700;
+  font-family: sans-serif;
+}
+main div h3 {
+  text-align: right;
+  font-size: 28px;
+}
+main div div {
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+}
+main div div p {
+  text-decoration: underline;
+}
+main div .galeria {
+  display: grid;
+  grid-template-columns: auto auto auto;
+}
+
+footer div {
+  margin-top: 500px;
+  margin-bottom: 0;
+  background-color: tomato;
+}
+footer div p {
+  text-align: center;
+  color: whitesmoke;
+}
+
+/*# sourceMappingURL=styles.css.map */
