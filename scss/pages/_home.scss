@@ -77,7 +77,8 @@ main{
   }
   div{
     .boton-contactar{
-      display: flex;
+      display: grid;
+      grid-template-columns: auto;
       justify-content: center;
       margin-top: 34px;
       margin-bottom: 34px;
@@ -295,14 +296,6 @@ main{
         padding-top: 100px;
       }
     }
-    .galeria-design{
-      display: grid;
-      justify-content: center;
-      a{
-        margin-top: 30px;
-        margin-bottom: 30px;
-      }
-    }
     // Carousel
     .carousel-mod{
       div{
@@ -463,6 +456,12 @@ footer{
   }
 
   .site-map{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    a{
+      font-size: 20px;
+    }
     a:hover{
       font-weight: 600;
     }

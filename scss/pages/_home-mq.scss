@@ -1,5 +1,6 @@
 // Media query landing page
 
+// Media query tablet
 @media screen and (min-width:720px) {
   header{
     .navbar-edit{
@@ -15,17 +16,28 @@
             }
           }
         }
+        button{
+          display: none;
+        }
       }
     }
   }
   main{
     div{
+      .boton-contactar{
+        margin-top: 32px;
+      }
+    }
+    div{
       .galeria{
+        margin-top: 36px;
         display: grid;
-        grid-template-columns: 300px 300px 300px;
-        padding-bottom: 150px;
+        grid-template-columns: 300px 300px;
+        padding-bottom: 50px;
         justify-content: center;
         gap: 20px;
+        position: relative;
+        left: 9px;
         a{
           display: grid;
           grid-template-columns: auto;
@@ -39,6 +51,67 @@
             width: 240px;
             border-radius: 12px;
           }
+        }
+        .tarjeta-development, .tarjeta-design{
+          height: 220px;
+        }
+        .tarjeta-about{
+          margin-top: 18px;
+          width: 200%;
+          height: 60px;
+          p{
+            padding-top: 14px;
+            padding-bottom: 8px;
+          }
+        }
+      }
+    }
+    div{
+      .subtitulo-developer{
+        p{
+          font-size: 39px;
+        }
+      }
+      .galeria-developer{
+        grid-template-columns: auto auto;
+      }
+    }
+    div{
+      .subtitulo-design{
+        p{
+          font-size: 40px;
+          margin-bottom: 42px;
+        }
+      }
+      .carousel-mod{
+        div{
+          width: 350px;
+          div{
+            img{
+              height: 530px;
+            }
+          }
+        }
+      }
+    }
+    .galeria-about{
+      div{
+        display: grid;
+        grid-template-columns: auto;
+        justify-content: center;
+        div{
+          .about-nombre{
+            margin-bottom: 30px;
+          }
+          .about-text{
+            text-align: justify;
+            min-width: 400px;
+          }
+        }
+        .about-botones{
+          display: flex;
+          margin-top: 42px;
+          margin-bottom: 2px;
         }
       }
     }

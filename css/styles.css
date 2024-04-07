@@ -79,7 +79,8 @@ main div h3 {
   font-size: 24px;
 }
 main div .boton-contactar {
-  display: flex;
+  display: grid;
+  grid-template-columns: auto;
   justify-content: center;
   margin-top: 34px;
   margin-bottom: 34px;
@@ -272,14 +273,6 @@ main div .subtitulo-design p {
   margin-bottom: 52px;
   padding-top: 100px;
 }
-main div .galeria-design {
-  display: grid;
-  justify-content: center;
-}
-main div .galeria-design a {
-  margin-top: 30px;
-  margin-bottom: 30px;
-}
 main div .carousel-mod div {
   width: 280px;
   justify-content: center;
@@ -407,6 +400,14 @@ footer .logos-link-footer .logo-instagram-footer img {
 footer .logos-link-footer a:hover {
   box-shadow: 0 2px 0 #7b34c2;
 }
+footer .site-map {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+footer .site-map a {
+  font-size: 20px;
+}
 footer .site-map a:hover {
   font-weight: 600;
 }
@@ -427,12 +428,21 @@ footer .firma-footer p .firma-footer-nombre:hover {
   header .navbar-edit div div ul li a {
     display: none;
   }
+  header .navbar-edit div button {
+    display: none;
+  }
+  main div .boton-contactar {
+    margin-top: 32px;
+  }
   main div .galeria {
+    margin-top: 36px;
     display: grid;
-    grid-template-columns: 300px 300px 300px;
-    padding-bottom: 150px;
+    grid-template-columns: 300px 300px;
+    padding-bottom: 50px;
     justify-content: center;
     gap: 20px;
+    position: relative;
+    left: 9px;
   }
   main div .galeria a {
     display: grid;
@@ -447,6 +457,51 @@ footer .firma-footer p .firma-footer-nombre:hover {
   main div .galeria a img {
     width: 240px;
     border-radius: 12px;
+  }
+  main div .galeria .tarjeta-development, main div .galeria .tarjeta-design {
+    height: 220px;
+  }
+  main div .galeria .tarjeta-about {
+    margin-top: 18px;
+    width: 200%;
+    height: 60px;
+  }
+  main div .galeria .tarjeta-about p {
+    padding-top: 14px;
+    padding-bottom: 8px;
+  }
+  main div .subtitulo-developer p {
+    font-size: 39px;
+  }
+  main div .galeria-developer {
+    grid-template-columns: auto auto;
+  }
+  main div .subtitulo-design p {
+    font-size: 40px;
+    margin-bottom: 42px;
+  }
+  main div .carousel-mod div {
+    width: 350px;
+  }
+  main div .carousel-mod div div img {
+    height: 530px;
+  }
+  main .galeria-about div {
+    display: grid;
+    grid-template-columns: auto;
+    justify-content: center;
+  }
+  main .galeria-about div div .about-nombre {
+    margin-bottom: 30px;
+  }
+  main .galeria-about div div .about-text {
+    text-align: justify;
+    min-width: 400px;
+  }
+  main .galeria-about div .about-botones {
+    display: flex;
+    margin-top: 42px;
+    margin-bottom: 2px;
   }
 }
 
