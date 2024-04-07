@@ -5,8 +5,6 @@
   header{
     .navbar-edit{
       div{
-        .titulo-navbar{
-        }
         div{
           ul{
             li{
@@ -31,27 +29,10 @@
     div{
       .galeria{
         margin-top: 36px;
-        display: grid;
         grid-template-columns: 300px 300px;
-        padding-bottom: 50px;
-        justify-content: center;
         gap: 20px;
         position: relative;
         left: 9px;
-        a{
-          display: grid;
-          grid-template-columns: auto;
-          text-decoration: none;
-          color: $color-blanco-sutil;
-          justify-content: center;
-          p{
-            text-align: center;
-          }
-          img{
-            width: 240px;
-            border-radius: 12px;
-          }
-        }
         .tarjeta-development, .tarjeta-design{
           height: 220px;
         }
@@ -114,6 +95,75 @@
           margin-bottom: 2px;
         }
       }
+    }
+  }
+}
+
+// Media query desktop
+@media screen and (min-width:1024px){
+  main{
+    div{
+      h1{
+        font-size: 94px;
+      }
+      h3{
+        font-style: 32px;
+      }
+    }
+    div{
+      .boton-contactar{
+        margin-top: 60px;
+        margin-bottom: 60px;
+      }
+    }
+    div{
+      .galeria{
+        grid-template-columns: 300px 300px 300px;
+        padding-bottom: 50px;
+        a{
+          p{
+            text-align: center;
+          }
+          img{
+            width: 240px;
+            border-radius: 12px;
+          }
+        }
+        .tarjeta-development, .tarjeta-design, .tarjeta-about{
+          height: 220px;
+        }
+        .tarjeta-about{
+          margin-top: 0;
+          width: 100%;
+        }
+      }
+    }
+    div{
+      .galeria-developer{
+        gap: 100px;
+        a{
+          .tarjeta-proyecto{
+            height: 320px;
+            width: 380px;
+            img{
+              height: 320px;
+              width: 380px;
+            }
+          }
+        }
+      }
+    }
+    div{
+      .carousel-mod{
+        div{
+          width: 550px;
+        }
+      }
+    }
+    .galeria-about{
+      grid-template-columns: auto auto;
+      margin-left: 200px;
+      margin-right: 200px;
     }
   }
 }
