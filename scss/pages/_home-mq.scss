@@ -1,0 +1,46 @@
+// Media query landing page
+
+@media screen and (min-width:720px) {
+  header{
+    .navbar-edit{
+      div{
+        .titulo-navbar{
+        }
+        div{
+          ul{
+            li{
+              a{
+                display: none;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+  main{
+    div{
+      .galeria{
+        display: grid;
+        grid-template-columns: 300px 300px 300px;
+        padding-bottom: 150px;
+        justify-content: center;
+        gap: 20px;
+        a{
+          display: grid;
+          grid-template-columns: auto;
+          text-decoration: none;
+          color: $color-blanco-sutil;
+          justify-content: center;
+          p{
+            text-align: center;
+          }
+          img{
+            width: 240px;
+            border-radius: 12px;
+          }
+        }
+      }
+    }
+  }
+}
