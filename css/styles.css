@@ -237,7 +237,6 @@ main div .galeria-developer a .tarjeta-proyecto img {
   height: 220px;
   display: block;
   border-radius: 12px;
-  border: 4px solid #A448FE;
 }
 main div .galeria-developer a .tarjeta-proyecto .superposicion {
   position: absolute;
@@ -279,7 +278,7 @@ main div .carousel-mod div {
   box-shadow: 5px 6px 0px #F4F12D;
 }
 main div .carousel-mod div div img {
-  height: 450px;
+  height: 320px;
   border-radius: 2px;
 }
 main .galeria-about {
@@ -329,16 +328,16 @@ main .galeria-about div .about-botones button:active {
   color: #A448FE;
   transition: all 0.12s ease;
 }
-main .galeria-about div .about-botones .boton-contactar-dos {
+main .galeria-about div .about-botones a .boton-contactar-dos {
   background-color: #A448FE;
   color: #F5F5F5;
   font-size: 20px;
 }
-main .galeria-about div .about-botones .boton-contactar-dos:hover {
+main .galeria-about div .about-botones a .boton-contactar-dos:hover {
   border: 2px solid #F5F5F5;
   padding: 6px 28px;
 }
-main .galeria-about div .about-botones .boton-contactar-dos:active {
+main .galeria-about div .about-botones a .boton-contactar-dos:active {
   background-color: #F5F5F5;
   color: #A448FE;
   transition: all 0.12s ease;
@@ -457,15 +456,18 @@ footer .firma-footer p .firma-footer-nombre:hover {
   main div .galeria-developer {
     grid-template-columns: auto auto;
   }
+  main div .galeria-developer .segunda-tarjeta {
+    order: -1;
+  }
   main div .subtitulo-design p {
     font-size: 40px;
     margin-bottom: 42px;
   }
   main div .carousel-mod div {
-    width: 350px;
+    width: 380px;
   }
   main div .carousel-mod div div img {
-    height: 530px;
+    height: 420px;
   }
   main .galeria-about div {
     display: grid;
@@ -526,7 +528,7 @@ footer .firma-footer p .firma-footer-nombre:hover {
     width: 380px;
   }
   main div .carousel-mod div {
-    width: 550px;
+    width: 400px;
   }
   main .galeria-about {
     grid-template-columns: auto auto;

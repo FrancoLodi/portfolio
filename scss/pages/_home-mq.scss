@@ -55,6 +55,9 @@
       }
       .galeria-developer{
         grid-template-columns: auto auto;
+        .segunda-tarjeta{
+          order: -1;
+        }
       }
     }
     div{
@@ -66,10 +69,10 @@
       }
       .carousel-mod{
         div{
-          width: 350px;
+          width: 380px;
           div{
             img{
-              height: 530px;
+              height: 420px;
             }
           }
         }
@@ -156,7 +159,7 @@
     div{
       .carousel-mod{
         div{
-          width: 550px;
+          width: 400px;
         }
       }
     }
